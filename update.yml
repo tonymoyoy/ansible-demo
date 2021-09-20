@@ -23,3 +23,9 @@
           - util-linux
 
         state: present
+
+    - name: Bashrc Configuration
+      lineinfile:
+        path: /home/tony/.bashrc
+        line: "HISTCONTROL=ignoredups:erasedups"
+        state: present
