@@ -13,7 +13,7 @@
         name: 
           - terminator
           - openssh-server
-          - batcat
+          - bat
           - vim
           - ncdu
           - sysstat
