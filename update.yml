@@ -8,7 +8,18 @@
     - name: Upgrade all packages on servers
       apt: upgrade=dist force_apt_get=yes
 
-    - name: Install terminator terminal
+    - name: Install common applications
       apt: 
-        name: terminator
+        name: 
+          - terminator
+          - openssh-server
+          - batcat
+          - vim
+          - ncdu
+          - sysstat
+          - htop
+          - ccze
+          - dstat
+          - util-linux
+
         state: present
