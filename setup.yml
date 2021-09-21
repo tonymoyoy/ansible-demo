@@ -21,6 +21,7 @@
           - ccze
           - dstat
           - util-linux
+          - git
 
         state: present
 
