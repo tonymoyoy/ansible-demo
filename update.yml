@@ -29,3 +29,8 @@
         path: /home/tony/.bashrc
         line: "HISTCONTROL=ignoredups:erasedups"
         state: present
+      lineinfile:
+        path: /home/tony/.bashrc
+        line: "shopt -s histappend"
+        state: present
+
