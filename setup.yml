@@ -22,6 +22,7 @@
           - dstat
           - util-linux
           - git
+          - tree
 
         state: present
 
