@@ -8,7 +8,8 @@
     - name: Upgrade all packages on servers
       apt: upgrade=dist force_apt_get=yes
 
-    - name: Install common applications
+    - name: Install basic applications
+      tags: ['basic-apps']
       apt: 
         name: 
           - terminator
@@ -27,6 +28,7 @@
         state: present
 
     - name: Bashrc Configuration
+      tags: ['Bash Config']
       lineinfile:
         path: /home/tony/.bashrc
         line: "HISTCONTROL=ignoredups:erasedups"
