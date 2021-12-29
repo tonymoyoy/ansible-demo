@@ -1,6 +1,4 @@
-- hosts: servers
-  become: true
-  remote_user: tony
+- hosts: 127.0.0.1
   tasks:
     - name: Update apt repo and cache on all servers
       apt: update_cache=yes force_apt_get=yes cache_valid_time=3600
