@@ -23,6 +23,7 @@
           - git
           - tree
           - curl
+          - npm
 
         state: present
 
