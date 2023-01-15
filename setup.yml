@@ -24,6 +24,7 @@
           - tree
           - curl
           - npm
+          - mesa-utils
 
         state: present
 
